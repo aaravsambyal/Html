@@ -5,64 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registration</title>
-    <style>
-        button:hover {
-            background-color: red;
-            color: white;
-        }
-
-        label.checkbox {
-            color: green;
-        }
-
-        label.course-label:hover {
-            color: grey;
-        }
-
-        div {
-            border: 2px solid black;
-            padding: 10px;
-            text-align: left;
-            width: 400px;
-            margin: 50px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div>
-    <h1 style="text-align: center;">REGISTRATION FORM</h1>
+        <h1 style="text-align: center;">REGISTRATION FORM</h1>
 
-    <form action="/submit" method="POST">
+        <form action="/submit" method="POST">
 
-        <label for="name"><b>Name</b></label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
+            <label for="name"><b>Name</b></label><br>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br><br>
 
-        <label for="email"><b>Email</b></label><br>
-        <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
+            <label for="email"><b>Email</b></label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
 
-        <label for="password"><b>Password</b></label><br>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+            <label for="date"><b>DOB</b></label><br>
+            <input type="date" id="date" name="date"><br><br>
 
-        <label for="cpassword"><b>Confirm Password</b></label><br>
-        <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password"><br><br>
+            <label for="phone"><b>Contact number</b></label><br>
+            <input type="tel" id="tel" name="tel"><br><br>
 
-        <label><b>Gender</b></label><br>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br><br>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
 
-        <label><b>Course</b></label><br>
-        <input type="checkbox" id="web-development" name="course" value="web-development">
-        <label for="web-development" class="course-label">Web Development</label><br>
-        <input type="checkbox" id="oop-cpp" name="course" value="oop-cpp">
-        <label for="oop-cpp" class="course-label">Object Oriented C++</label><br>
-        <input type="checkbox" id="digital-design" name="course" value="digital-design">
-        <label for="digital-design" class="course-label">Digital System Design</label><br><br>
+            <label for="cpassword"><b>Confirm Password</b></label><br>
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password"><br><br>
 
-        <button type="submit">Submit</button>
-    </form>
+            <label><b>Gender</b></label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label><b>Course</b></label><br>
+            <input type="checkbox" id="web-development" name="course" value="web-development">
+            <label for="web-development" class="course-label">Web Development</label><br>
+            <input type="checkbox" id="oop-cpp" name="course" value="oop-cpp">
+            <label for="oop-cpp" class="course-label">Object Oriented C++</label><br>
+            <input type="checkbox" id="digital-design" name="course" value="digital-design">
+            <label for="digital-design" class="course-label">Digital System Design</label><br><br>
+
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
 
