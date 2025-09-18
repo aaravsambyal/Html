@@ -21,3 +21,11 @@ button:hover {
             width: 400px;
             margin: 50px auto;
         }
+
+        input.element:hover{
+             color:darkgreen
+        }
+
+        input.element{
+            background-color: whitesmoke;
+        }
