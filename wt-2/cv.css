@@ -1,0 +1,29 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    
+    
+   
+}
+
+div{
+    display: flex;
+    
+   
+}
+
+#A{
+    background-color: greenyellow;
+    
+
+}
+
+#B{
+    background-color: orange;
+}
