@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+    <style>
+       p{
+        text-align: center;
+        transition: 0.1s;
+       } 
+    </style>
+</head>
+<body>
+    <p></p>
+    <script>
+        let el = document.body.children[0];
+        let t = new Date();
+          el.textContent = t.toLocaleString();
+        
+        function showTime(){
+          let el = document.body.children[0];
+          let t = new Date();
+          el.textContent = t.toLocaleString();
+          
+        }
+
+        setInterval(showTime, 1000);
+
+    let mySize = 20;
+    let growing = true;
+    function shrinkGrow(){
+        if(growing){
+            el.style.color = `green`;
+            mySize += 1;
+            if(mySize > 60){
+                growing = false;
+                el.style.color = `red`;
+            }
+        }
+        else {
+            mySize -= 1;
+            if(mySize <= 20){
+                growing = true;
+            }
+        }
+        el.style.fontSize = mySize + "px";
+    }
+    setInterval(shrinkGrow, 80);
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+        Email <br>
+        <input type="text" name="abc" id="abc">
+        <input type="text" name="def" id="def">
+        <button type="submit" id="submit">Submit</button>
+        
+    </form>
+    <script>
+        let form = document.querySelector('form');
+        let input1 = document.getElementById('abc');
+        let input2 = document.getElementById('def');
+        let submit = document.getElementById('submit');
+        submit.addEventListener('click', function(event){
+            event.preventDefault();
+            if(!input1.value.includes("@") || !input1.value.includes(".com"))
+        {
+            alert("Please enter valid email");
+        } else{
+            alert("Email is correct");
+        }
+        });
+
+    </script>
+</body>
+</html>
